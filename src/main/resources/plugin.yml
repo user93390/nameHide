@@ -1,0 +1,13 @@
+name: nameHider
+version: '1.0-SNAPSHOT'
+main: dev.seasnail1.nameHider.NameHider
+api-version: '1.21'
+load: STARTUP
+authors: [ seasnail1 ]
+
+commands:
+  hide:
+    description: The main command for name obfuscation.
+    usage: /<command>
+    permission: nameHide.hide
+    permission-message: You do not have permission to use this command.
