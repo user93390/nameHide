@@ -11,9 +11,7 @@ public final class NameHider extends JavaPlugin {
 
     @Override
     public void onEnable() {
-        System.out.println("starting NameHider plugin");
-
-        saveDefaultConfig();
+        getLogger().log(Level.INFO, "starting NameHider plugin");
 
         HideCommand obfuscationCommand = new HideCommand();
         PluginCommand command = this.getCommand("hide");
@@ -25,6 +23,6 @@ public final class NameHider extends JavaPlugin {
 
     @Override
     public void onDisable() {
-        System.out.println("shutting down NameHider plugin");
+        getLogger().log(Level.INFO, "stopping NameHider plugin");
     }
 }
