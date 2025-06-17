@@ -21,10 +21,13 @@ repositories {
         name 'codemc'
         url 'https://repo.codemc.org/repository/maven-public/'
     }
+
+    maven { url 'https://jitpack.io' }
 }
 
 dependencies {
-    compileOnly("io.papermc.paper:paper-api:1.21.5-R0.1-SNAPSHOT")
+    compileOnly 'io.papermc.paper:paper-api:1.21.5-R0.1-SNAPSHOT'
+    compileOnly 'com.github.NEZNAMY:TAB-API:5.2.1'
 }
 
 tasks {

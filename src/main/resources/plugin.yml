@@ -2,8 +2,10 @@ name: nameHider
 version: '1.0-SNAPSHOT'
 main: dev.seasnail1.nameHider.NameHider
 api-version: '1.21'
-load: STARTUP
 authors: [ seasnail1 ]
+
+depend:
+  - TAB
 
 commands:
   hide:
